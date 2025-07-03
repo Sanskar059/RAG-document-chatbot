@@ -83,7 +83,7 @@ if pdf_file is not None:
     
 )
     client = OpenAI(
-    api_key="AIzaSyBWSOIoVCFG1jAPcEanZRJSzCY4I51VnCM",
+    api_key="google_api_key",
     base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
