@@ -1,6 +1,8 @@
-streamlit
-PyMuPDF
-langchain
-langchain-google-genai
-langchain-qdrant
-openai
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+PyMuPDF>=1.23.0
+openai>=1.10.0
+langchain>=0.1.17
+langchain-google-genai>=0.0.10
+langchain-qdrant>=0.1.4
+qdrant-client>=1.7.0
