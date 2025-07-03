@@ -2,7 +2,9 @@ import streamlit as st
 import time
 import fitz # PyMuPDF
 from openai import OpenAI
-
+from dotenv import load_dotenv
+load_dotenv()
+import os
 # vector embeddings of the pdf text
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
@@ -44,9 +46,12 @@ if pdf_file is not None:
 
 
 
+    google_api_key = os.getenv("GOOGLE_API_KEY")
+
+
     embeddings = GoogleGenerativeAIEmbeddings(
     model="models/embedding-001",
-    google_api_key="AIzaSyBWSOIoVCFG1jAPcEanZRJSzCY4I51VnCM"
+    google_api_key=google_api_key
        )
 
 
